@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title</title>
+</head>
+
+<body>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginM" tabindex="-1" aria-labelledby="loginMLabel" aria-hidden="true">
+        <div class="modal-dialog login_popup">
+            <div class="modal-content " style="background-image: url('img/patterrn.png'); background-size: auto;">
+
+                <div class="modal-body position-relative">
+                    <div class="position-absolute d-none d-lg-block" style="top: 0; right: 10px;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around">
+                    <div class="col-12 d-flex d-lg-none gap-4 px-4 pb-4" style="border-bottom: 1px solid #D9D9D9;">
+                        <div style="cursor: pointer;" class="log_B act">Login</div>
+                        <div style="cursor: pointer;" class="sign_B">Register</div>
+                    </div>
+                    <div class="log_ col-lg-6 h-100 py-5 position-relative">
+                        <div class="login px-4">
+                            <div class=" row gap-4 ">
+                                <h2 class="fs40 fsm24 fw-bold text-lg-center mb-4"> Login</h2>
+                                <div class="col-lg-12 position-relative bg-white">
+                                    <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="text"
+                                        placeholder="" class="w-100 fs16">
+                                    <label for="" class="text-black position-absolute Placeholder fa16"
+                                        style="background-color: #ffffff !important;">Email *</label>
+                                </div>
+                                <div class="col-lg-12 position-relative bg-white">
+                                    <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="password"
+                                        placeholder="" class="w-100 fs16">
+                                    <label for="" class="text-black position-absolute Placeholder fa16"
+                                        style="background-color: #ffffff !important;">Password *</label>
+                                </div>
+                                <div
+                                    class="col-lg-12 position-relative d-flex gap-2 align-items-center justify-content-between">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <input type="checkbox" id="4" class="mychk">
+                                        <label for="4" class="chk"></label>
+                                        <label for="4">Remember me</label>
+                                    </div>
+
+                                    <div>
+                                        <a href="#" class="for_btn" style="color: #44BAFD;">Forgotten Password?</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <button
+                                        class="d-flex border-0 btnM  col-lg-3 fw-bold btn1 justify-content-end gap-3 align-items-center py-3 ps-5 pe-4">
+                                        Login
+
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                                fill="#191919" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="forgot px-4">
+                            <div class="back_l d-flex gap-3 align-items-center text-primary position-absolute"
+                                style="top:10px; cursor: pointer;"><svg width="25" height="13" viewBox="0 0 25 13"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.59421 5.57007L25 5.57008L25 7.42995L4.59422 7.42995L7.9255 10.6917L6.62431 12.0206L1.66465 7.16447L0.986023 6.50001L1.66465 5.83555L6.62431 0.979389L7.9255 2.30831L4.59421 5.57007Z"
+                                        fill="#44BAFD" />
+                                </svg> Back to login</div>
+                            <div class="row gap-4">
+                                <h2 class="fs40 fsm24 fw-bold text-lg-center mb-4"> Forgot password</h2>
+                                <p class="fs16 text-center">
+                                    If you've forgotten your password, don't worry! Simply click on the "forgot
+                                    password" link and enter your email address. We'll send you an email with
+                                    instructions on how to reset your password. Make sure to check your spam or junk
+                                    folder if you don't
+                                    see the email in your inbox.
+                                </p>
+                                <div class="col-lg-12 position-relative bg-white">
+                                    <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="text"
+                                        placeholder="" class="w-100 fs16">
+                                    <label for="" class="text-black position-absolute Placeholder fa16"
+                                        style="background-color: #ffffff !important;">Email*</label>
+                                </div>
+
+                                <div
+                                    class="col-lg-12 position-relative d-flex gap-2 align-items-center justify-content-between">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <input type="checkbox" id="1" class="mychk">
+                                        <label for="1" class="chk"></label>
+                                        <label for="1">I agree with the <a href="" style="color: #44BAFD;"> Terms
+                                                and
+                                                Conditions </a> and <a href="" style="color: #44BAFD;">Privacy
+                                                Policy</a></label>
+                                    </div>
+
+
+                                </div>
+                                <div class="row justify-content-between pe-lg-0 h-100">
+                                    <div class="col-lg-6 col-10">
+                                        <img src="img/Screenshot 2020-03-15 at 15.38 1.png" class="w-100" alt="">
+                                    </div>
+                                    <div class="col-lg-6 d-flex justify-content-end">
+                                        <button
+                                            class="d-flex border-0 py-3 py-lg-2 mt-4 mt-lg-0 btnM fw-bold btn1 justify-content-end gap-3 align-items-center py-2 ps-5 pe-2">
+                                            Reset my password
+
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                                    fill="#191919" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sign_ col-lg-6 row h-100 py-5 px-4" style=" border-left:1px solid #D9D9D9 ;">
+                        <h2 class="fs40 fsm24 fw-bold text-lg-center mb-4"> Register</h2>
+                        <div class="bg-white mb-4 col-lg-6 position-relative mt-4">
+                            <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="text" placeholder=""
+                                class="w-100 fs16">
+                            <label for="" class="text-black position-absolute Placeholder fa16"
+                                style="background-color: #ffffff !important;">First Name *</label>
+                        </div>
+                        <div class="bg-white mb-4 col-lg-6 position-relative mt-4">
+                            <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="text" placeholder=""
+                                class="w-100 fs16">
+                            <label for="" class="text-black position-absolute Placeholder fa16"
+                                style="background-color: #ffffff !important;">last Name *</label>
+                        </div>
+                        <div class="bg-white mb-4 col-lg-12 position-relative">
+                            <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="text" placeholder=""
+                                class="w-100 fs16">
+                            <label for="" class="text-black position-absolute Placeholder fa16"
+                                style="background-color: #ffffff !important;">Email *</label>
+                        </div>
+                        <div class="bg-white mb-4 col-lg-6 position-relative">
+                            <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="password" placeholder=""
+                                class="w-100 fs16">
+                            <label for="" class="text-black position-absolute Placeholder fa16"
+                                style="background-color: #ffffff !important;">Password *</label>
+                        </div>
+                        <div class="bg-white mb-4 col-lg-6 position-relative">
+                            <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="password" placeholder=""
+                                class="w-100 fs16">
+                            <label for="" class="text-black position-absolute Placeholder fa16"
+                                style="background-color: #ffffff !important;">Confirm password
+                                *</label>
+                        </div>
+                        <div
+                            class="mb-4 col-lg-12 position-relative d-flex gap-2 align-items-center justify-content-between">
+                            <div class="d-flex gap-2 align-items-center">
+                                <input type="checkbox" id="2" class="mychk">
+                                <label for="2" class="chk"></label>
+                                <label for="2">I agree with the <a href="" style="color: #44BAFD;"> Terms and
+                                        Conditions </a> and <a href="" style="color: #44BAFD;">Privacy
+                                        Policy</a></label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 h-100">
+                            <img src="img/Screenshot 2020-03-15 at 15.38 1.png" class="w-100" alt="">
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-end h-100">
+                            <button
+                                class="d-flex fw-bold btnM mt-lg-0 mt-4 payment_btn1 col-lg-6 border-0 justify-content-between gap-3 align-items-center py-3 px-3">
+                                Register
+
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6038 7.04665L-1.87977e-07 7.04665L-1.33778e-07 8.28656L13.6039 8.28656L11.383 10.4611L12.2505 11.347L15.5569 8.10961L16.0093 7.66663L15.5569 7.22366L12.2505 3.98622L11.383 4.87217L13.6038 7.04665Z"
+                                        fill="white" />
+                                </svg>
+
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="pagewrapper">
+        <div class="container-fluid position-sticky px-0 bg-white"
+            style="z-index: 999; top: 0px; border: 1px solid #D9D9D9;">
+            <div class="container  nav_ct" style="border-left: 1px solid #D9D9D9;border-right: 1px solid #D9D9D9;">
+                <div class="row px-0">
+                    <div class="col-3 d-flex align-items-center d-lg-none justify-content-center"
+                        style="border-right: 1px solid #D9D9D9;">
+                        <i class="fa fa-bars fs24 menu_b"></i>
+                    </div>
+                    <div class="col-lg-1 col-5 d-flex justify-content-center align-items-center order-0 order-lg-0">
+                        <a href="">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 navs order-2 order-lg-1">
+                        <ul class="d-flex navbar-nav flex-column flex-lg-row justify-content-center ">
+                            <li class="nav_ct nav_m d-block d-lg-none  nav-item py-3 px-4 d-flex justify-content-lg-center justify-content-between text-center text-uppercase fw-bold fs16"
+                                style="border-left: 1px solid #D9D9D9;border-right: 1px solid #D9D9D9;"><a href=""
+                                    class="align-items-center nav-link">
+                                    Menu
+                                </a>
+                            </li>
+                            <li class="nav_ct nav_m  nav-item py-3 px-3 d-flex justify-content-lg-center justify-content-between text-center text-uppercase fw-bold fs16"
+                                style="border-left: 1px solid #D9D9D9;border-right: 1px solid #D9D9D9 !important;"><a
+                                    href="aboutus.html" class=" align-items-center nav-link">
+                                    About Us
+
+                                </a>
+                                <svg width="17" class="d-lg-none d-block" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.604 7.04693L-1.87969e-07 7.04693L-1.33771e-07 8.28685L13.6037 8.28685L11.383 10.4612L12.2505 11.3472L15.5569 8.10973L16.0093 7.66675L15.5569 7.22378L12.2505 3.98634L11.383 4.87229L13.604 7.04693Z"
+                                        fill="#0E0E0E" />
+                                </svg>
+                            </li>
+                            <li class="nav_ct nav_m nav-item py-3 px-4 d-flex justify-content-lg-center justify-content-between text-center text-uppercase fw-bold fs16"
+                                style="border-right: 1px solid #D9D9D9;"><a href="store.html"
+                                    class=" align-items-center nav-link">
+                                    Store
+                                </a>
+                                <svg width="17" class="d-lg-none d-block" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.604 7.04693L-1.87969e-07 7.04693L-1.33771e-07 8.28685L13.6037 8.28685L11.383 10.4612L12.2505 11.3472L15.5569 8.10973L16.0093 7.66675L15.5569 7.22378L12.2505 3.98634L11.383 4.87229L13.604 7.04693Z"
+                                        fill="#0E0E0E" />
+                                </svg>
+                            </li>
+                            <li class="order-lg-0 order-1 nav_ct nav_m  nav-item py-3 px-4 d-flex justify-content-lg-center justify-content-between text-center text-uppercase fw-bold fs16"
+                                style="border-right: 1px solid #D9D9D9;"><a href="contactus.html"
+                                    class=" align-items-center nav-link">
+                                    Contact Us
+                                </a>
+                                <svg width="17" class="d-lg-none d-block" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.604 7.04693L-1.87969e-07 7.04693L-1.33771e-07 8.28685L13.6037 8.28685L11.383 10.4612L12.2505 11.3472L15.5569 8.10973L16.0093 7.66675L15.5569 7.22378L12.2505 3.98634L11.383 4.87229L13.604 7.04693Z"
+                                        fill="#0E0E0E" />
+                                </svg>
+                            </li>
+                            <li class="order-lg-1 order-0 nav_ct nav_m  nav-item py-3 px-4 d-flex justify-content-lg-center justify-content-between text-center text-uppercase fw-bold fs16"
+                                style="border-right: 1px solid #D9D9D9;"><a href="1on1.html"
+                                    class=" align-items-center nav-link">
+                                    BOOK 1:1
+                                </a>
+                                <svg width="17" class="d-lg-none d-block" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.604 7.04693L-1.87969e-07 7.04693L-1.33771e-07 8.28685L13.6037 8.28685L11.383 10.4612L12.2505 11.3472L15.5569 8.10973L16.0093 7.66675L15.5569 7.22378L12.2505 3.98634L11.383 4.87229L13.604 7.04693Z"
+                                        fill="#0E0E0E" />
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-4 py-3 order-1 order-lg-2 borderl">
+                        <ul class="d-flex flex-row  gap-4 align-items-center justify-content-lg-end navbar-nav gap-2">
+                            <li class="nav-item fs14 dropdown d-none d-lg-block">
+                                <a class="nav-link primary_clr active  dropdown-toggle text-white text-uppercase fw-bold fs16 d-flex align-items-center gap-2"
+                                    href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    GBP £
+                                    <i class="fa fa-chevron-down"></i>
+
+                                </a>
+                                <ul class="dropdown-menu p_back" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">USA</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">USA</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">USA</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">USA</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link position-relative primary_clr fs14 text-uppercase text-white position-relative"
+                                    href="#">
+
+
+                                    <svg class="" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.62764 17.7349L1.6123 8.86743H17.735L15.7196 17.7349H3.62764Z"
+                                            fill="white" />
+                                        <path d="M3.62764 17.7349L1.6123 8.86743H17.735L15.7196 17.7349H3.62764Z"
+                                            stroke="#191919" stroke-width="1.2092" />
+                                        <path d="M4.03064 8.86754L7.25517 2.41846" stroke="#191919"
+                                            stroke-width="1.2092" />
+                                        <path d="M15.3166 8.86754L12.092 2.41846" stroke="#191919"
+                                            stroke-width="1.2092" />
+                                    </svg>
+
+                                    <span class="position-absolute d-flex justify-content-center align-items-center"
+                                        style="
+                                   
+                                   top: 10px;
+                                    right: -3px;
+                                    background-color: #44BAFD;
+                                    
+                                    font-size: 10px;
+                                    width: 12px; height: 12px; border-radius: 50%;
+
+">10</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  fs1 text-uppercase text-white" type="button" class="btn btn-primary"
+                                    data-bs-toggle="modal" data-bs-target="#loginM" href="#"><svg width="25" height="24"
+                                        viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_26_408)">
+                                            <path
+                                                d="M7.91669 11.9167V7.33333C7.91669 4.80203 9.96872 2.75 12.5 2.75C15.0313 2.75 17.0834 4.80203 17.0834 7.33333V11.9167H7.91669Z"
+                                                fill="white" />
+                                            <path
+                                                d="M12.5 14.6666C9.34824 14.6666 6.38221 15.4619 3.79169 16.8629V20.1666H21.2084V16.8629C18.6179 15.4619 15.6518 14.6666 12.5 14.6666Z"
+                                                fill="white" />
+                                            <path
+                                                d="M7.91669 11.9167V7.33333C7.91669 4.80203 9.96872 2.75 12.5 2.75C15.0313 2.75 17.0834 4.80203 17.0834 7.33333V11.9167H7.91669Z"
+                                                stroke="#191919" stroke-width="1.375" />
+                                            <path
+                                                d="M12.5 14.6666C9.34824 14.6666 6.38221 15.4619 3.79169 16.8629V20.1666H21.2084V16.8629C18.6179 15.4619 15.6518 14.6666 12.5 14.6666Z"
+                                                stroke="#191919" stroke-width="1.375" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_26_408">
+                                                <rect width="19" height="19" fill="white" transform="translate(3 2)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container px-0 ">
+                <div class="row bg-white ">
+                    <nav aria-label="breadcrumb ">
+                        <ol class="breadcrumb m-0 py-3 px-4 px-lg-0">
+                            <li class="breadcrumb-item "><a href="#" class="text-decoration-none">Home</a></li>
+                            <li class="breadcrumb-item text-black"><a href="#" class="text-decoration-none">Book 1.1</a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+
+
+            <div class="w-100  border pattBK  a1 d-lg-flex position-relative"
+                style="background:url('img/1on1_bg.png'); background-position: center; background-size: auto; background-repeat: no-repeat;">
+                <div class="container bl py-lg-4 pt-lg-4 px-lg-5 border">
+                    <div class="row ps-3">
+                        <div class="col-12  pe-0 d-block d-lg-none position-relative">
+                            <img src="img/101M.png" class="w-100" alt="">
+
+
+                        </div>
+                        <div class="col-lg-12">
+                            <p class="text-uppercase fs24 mb-2 mt-lg-5 mt-4 fw-bold fsm16" style="color: #44BAFD;">Book
+                                1:1
+                            </p>
+                            <h1 class="fs40  fw-bold  mb-3 col-lg-6 col-11 text-capitalize mt-lg-3">
+                                Unlock the Full Potential of Your Web Presence
+                                </h2>
+                                <p class="fs16 col-lg-6 col-11 mb-5 mt-3">
+                                    Lorem ipsum dolor sit amet consectetur. Lobortis sit sed imperdiet tristique. Sem
+                                    quis sed venenatis purus. Molestie tempor massa aliquet purus. Ac integer in quisque
+                                    quam ultrices.
+                                </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="position-absolute h-100 side_box d-none d-lg-block"
+                    style="width: 12.5%; right: 0; z-index: 1; background-color: #191919; opacity: 0.3;">
+
+                </div>
+            </div>
+            <div class="w-100" style="background-image:url('img/1on1_bg2.png');background-position: center;">
+
+                <div class="row">
+                    <div class="col-lg-6  border mx-auto " style="background-image: url('img/1on1_bg1.png');">
+                        <div class="col-lg-10 mx-auto my-auto mt-4 py-lg-5 ">
+                            <h1 class="fs40 fsm24 col-lg-10 mx-auto text-lg-center px-4 px-lg-0">
+                                Book a free 1:1 session with one of our experts now!
+                            </h1>
+                            <p class="fs16 col-lg-11 mx-auto text-lg-center px-4 px-lg-0">Lorem ipsum dolor sit amet
+                                consectetur. Lobortis sit sed imperdiet tristique. Sem quis sed venenatis purus.
+                                Molestie tempor massa aliquet purus. Ac integer in quisque quam ultrices.
+                            </p>
+                            <form action="" class="col-lg-9 mx-auto px-4">
+
+
+                                <div class="row  mt-3 position-relative justify-content-center gap-4">
+
+                                    <div class="col-lg-12 position-relative px-0 bg-white">
+                                        <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="text"
+                                            placeholder="" class="w-100 fs16">
+                                        <label for="" class="position-absolute Placeholder fa16">Full Name</label>
+                                    </div>
+
+
+
+
+
+                                    <div class="col-lg-12 position-relative px-0 bg-white">
+                                        <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="text"
+                                            placeholder="" class="w-100 fs16">
+                                        <label for="" class="position-absolute Placeholder fa16">Email</label>
+                                    </div>
+
+
+
+
+
+                                    <div class="col-lg-12 position-relative px-0 bg-white">
+                                        <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="text"
+                                            placeholder="" class="w-100 fs16">
+                                        <label for="" class="position-absolute Placeholder fa16">Phone</label>
+                                    </div>
+
+
+
+
+
+                                    <div class="col-lg-12 position-relative px-0 bg-white">
+                                        <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="text"
+                                            placeholder="" class="w-100 fs16" style="height: 97px;">
+                                        <label for="" class="position-absolute Placeholder fa16">Comment</label>
+                                    </div>
+
+
+
+
+
+                                    <div class="col-lg-12 mx-auto px-0">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <input type="checkbox" id="1" class="mychk">
+                                            <label for="1" class="chk"></label>
+                                            <label for="1">By requesting a call you are agreeing to our consultancy
+                                                rates*</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 mx-auto px-0">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <input type="checkbox" id="2" class="mychk">
+                                            <label for="2" class="chk"></label>
+                                            <label for="2">I agree with the Terms and Conditions and Privacy
+                                                Policy</label>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="row gap-4 gap-lg-0 justify-content-between mt-3 px-0 align-items-center">
+                                    <div class="col-lg-4 col-9 px-0">
+                                        <img src="img/robots.png" class="w-100">
+                                    </div>
+                                    <div class="col-lg-4 d-flex justify-content-end px-0 align-items-center">
+                                        <button
+                                            class="payment_btn3 btnM d-lg-block btn-border py-3 rounded-0 fs16 px-4  d-flex justify-content-between mb-3">
+                                            <span class="text-start">Submit</span>
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                                    fill="#191919" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="owl-carousel o2 owl-theme d-block d-lg-none">
+                <div class="item">
+                    <div class="col-lg-4 col-8 border p-4">
+                        <svg style="margin-top: 5px;" width="44" height="44" viewBox="0 0 44 44" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 29.3333C15.6965 29.3333 9.76441 30.9239 4.58337 33.7258V40.3333H39.4167V33.7258C34.2357 30.9239 28.3036 29.3333 22 29.3333Z"
+                                fill="#C7BEF2" />
+                            <path
+                                d="M12.8334 14.6667V5.5H31.1667V14.6667C31.1667 19.7292 27.0626 23.8333 22 23.8333C16.9374 23.8333 12.8334 19.7292 12.8334 14.6667Z"
+                                fill="#C7BEF2" />
+                            <path
+                                d="M22 29.3333C15.6965 29.3333 9.76441 30.9239 4.58337 33.7258V40.3333H39.4167V33.7258C34.2357 30.9239 28.3036 29.3333 22 29.3333Z"
+                                stroke="#7F6AE1" stroke-width="2.75" />
+                            <path
+                                d="M12.8334 14.6667V5.5H31.1667V14.6667C31.1667 19.7292 27.0626 23.8333 22 23.8333C16.9374 23.8333 12.8334 19.7292 12.8334 14.6667Z"
+                                stroke="#7F6AE1" stroke-width="2.75" />
+                        </svg>
+                        <h2 class="fs32 fs16 mt-4">
+                            Custom learning
+                        </h2>
+                        <p class="fs24 fs16">
+                            Lorem ipsum dolor sit amet consectetur. Ut sollicitudin consectetur
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="col-lg-4 col-8 border p-4">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 10H38V38H10V10Z" fill="#C7BEF2" />
+                            <path d="M10 10H38V38H10V10Z" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M18 10V2" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M30 10V2" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M18 46V38" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M30 46V38" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M38 18H46" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M38 30H46" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M2 18H10" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M2 30H10" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M32 32H24" stroke="#7F6AE1" stroke-width="3" />
+                        </svg>
+
+                        <h2 class="fs32 fs16 mt-4">
+                            Bespoke development
+                        </h2>
+                        <p class="fs24 fs16 ">
+                            Lorem ipsum dolor sit amet consectetur. Ut sollicitudin consectetur
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="col-lg-4 col-8 border  p-4">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M34.5555 31.1223C32.2241 33.503 29.2539 36.357 25.6399 39.6869L23.9771 41.1728L22.3363 39.691C18.7394 36.3596 15.7762 33.5082 13.4425 31.1343C11.1172 28.7691 9.29571 26.6716 7.96015 24.8385C6.62035 22.9995 5.73971 21.3956 5.2614 20.0195C4.7713 18.6094 4.5304 17.2021 4.5304 15.7913C4.5304 12.9273 5.48374 10.5843 7.38798 8.66373C9.29073 6.74464 11.6117 5.78696 14.45 5.78696C16.0519 5.78696 17.5528 6.14694 18.9722 6.8702C20.3885 7.59189 21.6626 8.65615 22.7902 10.0979L23.9227 11.5462L25.1141 10.146C26.4296 8.60006 27.7722 7.51049 29.13 6.82125C30.488 6.13191 31.9358 5.78696 33.4935 5.78696C36.3534 5.78696 38.6889 6.74663 40.6001 8.66601C42.513 10.587 43.4695 12.9293 43.4695 15.7913C43.4695 17.1989 43.2251 18.5979 42.7281 19.9951C42.2394 21.3688 41.3554 22.9727 40.0229 24.8141C38.6971 26.6461 36.8807 28.7477 34.5555 31.1223Z"
+                                fill="#C7BEF2" stroke="#7F6AE1" stroke-width="3" />
+                        </svg>
+
+                        <h2 class="fs32 fs16 mt-4">
+                            1:1 session
+                        </h2>
+                        <p class="fs24 fs16">
+                            Lorem ipsum dolor sit amet consectetur. Ut sollicitudin consectetur
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container d-none d-lg-block">
+                <div class="row">
+                    <div class="col-lg-4 border  p-5">
+                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 29.3333C15.6965 29.3333 9.76441 30.9239 4.58337 33.7258V40.3333H39.4167V33.7258C34.2357 30.9239 28.3036 29.3333 22 29.3333Z"
+                                fill="#C7BEF2" />
+                            <path
+                                d="M12.8334 14.6667V5.5H31.1667V14.6667C31.1667 19.7292 27.0626 23.8333 22 23.8333C16.9374 23.8333 12.8334 19.7292 12.8334 14.6667Z"
+                                fill="#C7BEF2" />
+                            <path
+                                d="M22 29.3333C15.6965 29.3333 9.76441 30.9239 4.58337 33.7258V40.3333H39.4167V33.7258C34.2357 30.9239 28.3036 29.3333 22 29.3333Z"
+                                stroke="#7F6AE1" stroke-width="2.75" />
+                            <path
+                                d="M12.8334 14.6667V5.5H31.1667V14.6667C31.1667 19.7292 27.0626 23.8333 22 23.8333C16.9374 23.8333 12.8334 19.7292 12.8334 14.6667Z"
+                                stroke="#7F6AE1" stroke-width="2.75" />
+                        </svg>
+                        <h2 class="fs32 mt-4">
+                            Custom learning
+                        </h2>
+                        <p class="fs24">
+                            Lorem ipsum dolor sit amet consectetur. Ut sollicitudin consectetur
+                        </p>
+                    </div>
+                    <div class="col-lg-4 border  p-5">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 10H38V38H10V10Z" fill="#C7BEF2" />
+                            <path d="M10 10H38V38H10V10Z" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M18 10V2" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M30 10V2" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M18 46V38" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M30 46V38" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M38 18H46" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M38 30H46" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M2 18H10" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M2 30H10" stroke="#7F6AE1" stroke-width="3" />
+                            <path d="M32 32H24" stroke="#7F6AE1" stroke-width="3" />
+                        </svg>
+
+                        <h2 class="fs32 mt-4">
+                            Bespoke development
+                        </h2>
+                        <p class="fs24">
+                            Lorem ipsum dolor sit amet consectetur. Ut sollicitudin consectetur
+                        </p>
+                    </div>
+                    <div class="col-lg-4 border  p-5">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M34.5555 31.1223C32.2241 33.503 29.2539 36.357 25.6399 39.6869L23.9771 41.1728L22.3363 39.691C18.7394 36.3596 15.7762 33.5082 13.4425 31.1343C11.1172 28.7691 9.29571 26.6716 7.96015 24.8385C6.62035 22.9995 5.73971 21.3956 5.2614 20.0195C4.7713 18.6094 4.5304 17.2021 4.5304 15.7913C4.5304 12.9273 5.48374 10.5843 7.38798 8.66373C9.29073 6.74464 11.6117 5.78696 14.45 5.78696C16.0519 5.78696 17.5528 6.14694 18.9722 6.8702C20.3885 7.59189 21.6626 8.65615 22.7902 10.0979L23.9227 11.5462L25.1141 10.146C26.4296 8.60006 27.7722 7.51049 29.13 6.82125C30.488 6.13191 31.9358 5.78696 33.4935 5.78696C36.3534 5.78696 38.6889 6.74663 40.6001 8.66601C42.513 10.587 43.4695 12.9293 43.4695 15.7913C43.4695 17.1989 43.2251 18.5979 42.7281 19.9951C42.2394 21.3688 41.3554 22.9727 40.0229 24.8141C38.6971 26.6461 36.8807 28.7477 34.5555 31.1223Z"
+                                fill="#C7BEF2" stroke="#7F6AE1" stroke-width="3" />
+                        </svg>
+
+                        <h2 class="fs32 mt-4">
+                            1:1 session
+                        </h2>
+                        <p class="fs24">
+                            Lorem ipsum dolor sit amet consectetur. Ut sollicitudin consectetur
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-100 d-lg-none d-block" style="border-top:1px solid #D9D9D9;"></div>
+            <div class="w-100 bkNone faq mt-5 mt-lg-0"
+                style="background:url('img/faq.png'); background-position: center; ">
+
+                <div
+                    class="container  px-lg-0 pb-lg-0 pb-5  border h-100 border-bottom-0 border-top-0 border-right-0  position-relative">
+
+                    <h2 class="fs40 fsm24 mt-lg-4 ms-lg-5 ms-4">
+                        Frequent Asked Questions
+                    </h2>
+
+                    <div class="px-4 px-lg-0 accordion faqAc border-0 col-lg-8 mt-lg-5" id="accordionExample">
+
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+                                    <div class="">
+                                        <div class=" fs24 fsm16">
+
+
+                                            Lorem ipsum dolor sit amet consectetur.
+
+                                        </div>
+
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row mt-2 w-75 ">
+                                        <p class="fs16 ms-lg-5 col-lg-10">Lorem ipsum dolor sit amet consectetur.
+                                            Suscipit ac pellentesque quis donec risus fames dui ut. Porttitor vitae sed
+                                            leo egestas. Aliquam semper hendrerit varius habitasse. Montes aliquet
+                                            turpis sit ullamcorper dignissim
+                                            quam at euismod fames. Eu ornare mauris nunc morbi porttitor etiam mi
+                                            vulputate turpis. Ante ipsum dictum convallis pretium suspendisse vitae ut.
+                                            Suscipit pulvinar faucibus sit facilisis.</p>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+                                    <div class="">
+                                        <div class=" fs24 fsm16">
+
+
+                                            Lorem ipsum dolor sit amet consectetur.
+
+                                        </div>
+
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row mt-2 w-75 ">
+                                        <p class="fs16 ms-lg-5 col-lg-10">Lorem ipsum dolor sit amet consectetur.
+                                            Suscipit ac pellentesque quis donec risus fames dui ut. Porttitor vitae sed
+                                            leo egestas. Aliquam semper hendrerit varius habitasse. Montes aliquet
+                                            turpis sit ullamcorper dignissim
+                                            quam at euismod fames. Eu ornare mauris nunc morbi porttitor etiam mi
+                                            vulputate turpis. Ante ipsum dictum convallis pretium suspendisse vitae ut.
+                                            Suscipit pulvinar faucibus sit facilisis.</p>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+
+                                    <div class="">
+                                        <div class=" fs24 fsm16">
+
+
+                                            Molestie tempor massa aliquet purus.
+
+                                        </div>
+
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row mt-2  ">
+                                        <p class="fs16 ms-lg-5 col-lg-10">Lorem ipsum dolor sit amet consectetur.
+                                            Suscipit ac pellentesque quis donec risus fames dui ut. Porttitor vitae sed
+                                            leo egestas. Aliquam semper hendrerit varius habitasse. Montes aliquet
+                                            turpis sit ullamcorper dignissim
+                                            quam at euismod fames. Eu ornare mauris nunc morbi porttitor etiam mi
+                                            vulputate turpis. Ante ipsum dictum convallis pretium suspendisse vitae ut.
+                                            Suscipit pulvinar faucibus sit facilisis.</p>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+
+                                    <div class="">
+                                        <div class=" fs24 fsm16">
+
+
+                                            Ac integer in quisque quam ultrices.
+
+                                        </div>
+
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row mt-2 w-75 ">
+                                        <p class="fs16 ms-lg-5 col-lg-10">Lorem ipsum dolor sit amet consectetur.
+                                            Suscipit ac pellentesque quis donec risus fames dui ut. Porttitor vitae sed
+                                            leo egestas. Aliquam semper hendrerit varius habitasse. Montes aliquet
+                                            turpis sit ullamcorper dignissim
+                                            quam at euismod fames. Eu ornare mauris nunc morbi porttitor etiam mi
+                                            vulputate turpis. Ante ipsum dictum convallis pretium suspendisse vitae ut.
+                                            Suscipit pulvinar faucibus sit facilisis.</p>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSIX">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSIX" aria-expanded="false" aria-controls="collapseSIX">
+
+                                    <div class="">
+                                        <div class=" fs24 fsm16">
+                                            m mi vulputate turpis. Ante ipsum dictum convallis
+                                        </div>
+
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseSIX" class="accordion-collapse collapse" aria-labelledby="headingSIX"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="row mt-2 w-75 ">
+                                        <p class="fs16 ms-lg-5 col-lg-10">Lorem ipsum dolor sit amet consectetur.
+                                            Suscipit ac pellentesque quis donec risus fames dui ut. Porttitor vitae sed
+                                            leo egestas. Aliquam semper hendrerit varius habitasse. Montes aliquet
+                                            turpis sit ullamcorper dignissim
+                                            quam at euismod fames. Eu ornare mauris nunc morbi porttitor etiam mi
+                                            vulputate turpis. Ante ipsum dictum convallis pretium suspendisse vitae ut.
+                                            Suscipit pulvinar faucibus sit facilisis.</p>
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="px-4 px-lg-0 position-absolute mt-4 mt-lg-0 loB btn_200" style="bottom: 0 ; right: 0;">
+                        <div
+                            class="pt-5 payment_btn3 bigBTN  pb-lg-2 pb-3 px-lg-2 px-3 align-items-center mb-0 w-100 btn1 d-flex justify-content-between">
+                            <span>Get in touch</span>
+                            <i class="fa fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <footer class="bg-dark text-white position-relative">
+                <div class="container" style=" border:1px solid #3C3C3C;">
+                    <div class="row mb-lg-0 ">
+                        <div class="col-lg-4 d-flex ps-4 ps-lg-0 d-lg-flex justify-content-lg-center justify-content-between py-lg-5 py-4 text-center"
+                            style=" border-right:1px solid #3C3C3C ;">
+                            <div class="d-none d-lg-block">
+                                <img src="img/flogo.png" class="d-none d-lg-block mb-4" alt="">
+
+                                <img src="img/Frame 21.png" class="d-none d-lg-block" alt="">
+                            </div>
+                            <img src="img/logofM.svg" class="d-block d-lg-none" alt="" class=" mb-lg-4">
+                            <div class="dropdown d-block d-lg-none">
+                                <a class="dropdown-toggle gap-2 d-flex align-items-center" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    GBP £
+                                    <i class="fa fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu text-black mD" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item text-black" href="#"> GBP £</a></li>
+                                    <li><a class="dropdown-item text-black" href="#"> GBP £</a></li>
+                                    <li><a class="dropdown-item text-black" href="#"> GBP £</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="w-100 d-block d-lg-none" style="border-bottom: 2px solid #3c3c3c;"></div>
+
+                        <div class="col-lg-2 col-6 d-flex flex-column py-lg-5 py-4 ps-lg-5 ps-4"
+                            style=" border-right:1px solid #3C3C3C ;">
+                            <h3 class="fs24 fsm16 mb-4">Useful Links</h3>
+
+                            <a href="aboutus.html" class="fs16 mb-3">About Us</a>
+                            <a href="store.html" class="fs16 mb-3">Store</a>
+                            <a href="1on1.html" class="fs16 mb-3">Book 1:1</a>
+                            <a href="contactus.html" class="fs16 mb-3">Contact Us</a>
+                        </div>
+                        <div class="col-lg-2 col-6 d-flex flex-column py-lg-5 py-4 ps-lg-5 ps-4"
+                            style=" border-right:1px solid #3C3C3C ;">
+                            <h3 class="fs24 fsm16 mb-4">Company</h3>
+
+                            <a href="terms.html" class="fs16 mb-3">Terms & Conditions</a>
+                            <a href="" class="fs16 mb-3">Cookie Policy</a>
+                        </div>
+                        <div class="w-100 d-block d-lg-none" style="border-bottom: 2px solid #3c3c3c;"></div>
+
+
+                        <div class="col-lg-4 d-flex flex-column py-lg-5 py-4 ps-lg-5 ps-4 mb-lg-0">
+                            <h3 class="fs24 fsm16 mb-4">Contact us</h3>
+
+                            <a href="" class="fs16 mb-3">Email: support@devvdragons.com</a>
+                            <a href="" class="fs16 mb-3">Phone: +44 (0)20 123 4567</a>
+                            <p class="fs16 text-white">Address: 123 Street, London,<br> United Kingdom, 123 ABC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" style=" border:1px solid #3C3C3C;">
+                    <div class="row mb-lg-0 ">
+                        <div class="col-lg-4 pt-lg-3 d-block ps-4 ps-lg-0 d-lg-flex justify-content-lg-center justify-content-between text-center"
+                            style=" border-right:1px solid #3C3C3C ;">
+                            <img src="img/Frame 21.png" class="pt-3 d-block d-lg-none mx-auto" alt="">
+                            <p class="d-block  fsm12  mt-3 text-lg-start text-center text-muted">
+                                © 2021 devvdragons All rights reserved.
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-6 d-flex flex-column d-none d-lg-block"
+                            style=" border-right:1px solid #3C3C3C ;">
+
+                        </div>
+                        <div class="col-lg-2 col-6 d-flex flex-column d-none d-lg-block"
+                            style=" border-right:1px solid #3C3C3C ;">
+
+                        </div>
+                        <div class="w-100 d-none d-lg-block d-none d-lg-block"
+                            style="border-bottom: 2px solid #3c3c3c;">
+                        </div>
+
+
+                        <div class="col-lg-4 d-flex flex-column 0 d-none d-lg-block">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="position-absolute  d-flex d-lg-block flex-column justify-content-center align-items-center w-100"
+                style="bottom: 15px; border-top:1px solid #3C3C3C ;">
+                <div class="container">
+                    <img src="img/Frame 21.png" class="pt-3 d-block d-lg-none" alt="">
+                    <p class="d-block  fsm12 ms-5 ps-5  mt-2 text-lg-start text-center text-muted">
+                        © 2021 devvdragons All rights reserved.
+                    </p>
+                </div>
+            </div> -->
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- <script src="js/scripts.js"></script> -->
+    <script src="js/menu.js"></script>
+
+    <script>
+        $(".owl-carousel.o2").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    margin: -125,
+                },
+                600: {
+                    items: 4,
+                    margin: 100,
+                },
+                1000: {
+                    items: 4,
+                    // margin: 140,
+                },
+            },
+        });
+
+        $(document).ready(function () {
+
+            $('.owl-next').html('<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.6038 7.04668L-1.87976e-07 7.04668L-1.33778e-07 8.2866L13.6039 8.2866L11.383 10.4611L12.2505 11.3471L15.5569 8.10964L16.0093 7.66667L15.5569 7.2237L12.2505 3.98626L11.383 4.87221L13.6038 7.04668Z" fill="#44BAFD"/></svg>');
+            $('.owl-prev').html('<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.39617 7.04668L17 7.04668L17 8.2866L3.39611 8.2866L5.617 10.4611L4.74954 11.3471L1.4431 8.10964L0.990683 7.66667L1.4431 7.2237L4.74954 3.98626L5.617 4.87221L3.39617 7.04668Z" fill="#44BAFD"/></svg>');
+        })
+    </script>
+
+</body>
+
+</html>

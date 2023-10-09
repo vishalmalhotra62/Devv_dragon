@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title</title>
+</head>
+
+<body>
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginM" tabindex="-1" aria-labelledby="loginMLabel" aria-hidden="true">
+        <div class="modal-dialog login_popup">
+            <div class="modal-content " style="background-image: url('img/patterrn.png'); background-size: auto;">
+
+                <div class="modal-body position-relative">
+                    <div class="position-absolute d-none d-lg-block" style="top: 0; right: 10px;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+
+                <div class="row justify-content-around">
+                    <div class="col-12 d-flex d-lg-none gap-4 px-4 pb-4" style="border-bottom: 1px solid #D9D9D9;">
+                        <div style="cursor: pointer;" class="log_B act">Login</div>
+                        <div style="cursor: pointer;" class="sign_B">Register</div>
+                    </div>
+                    <div class="log_ col-lg-6 h-100 py-5 position-relative">
+                        <div class="login px-4">
+                            <div class=" row gap-4 ">
+                                <h2 class="fs40 fsm24 fw-bold text-lg-center mb-4"> Login</h2>
+                                <div class="col-lg-12 position-relative bg-white">
+                                    <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="text"
+                                        placeholder="" class="w-100 fs16">
+                                    <label for="" class="text-black position-absolute Placeholder fa16"
+                                        style="background-color: #ffffff !important;">Email *</label>
+                                </div>
+                                <div class="col-lg-12 position-relative bg-white">
+                                    <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="password"
+                                        placeholder="" class="w-100 fs16">
+                                    <label for="" class="text-black position-absolute Placeholder fa16"
+                                        style="background-color: #ffffff !important;">Password *</label>
+                                </div>
+                                <div
+                                    class="col-lg-12 position-relative d-flex gap-2 align-items-center justify-content-between">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <input type="checkbox" id="4" class="mychk">
+                                        <label for="4" class="chk"></label>
+                                        <label for="4">Remember me</label>
+                                    </div>
+
+                                    <div>
+                                        <a href="#" class="for_btn" style="color: #44BAFD;">Forgotten Password?</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <button
+                                        class="d-flex border-0 btnM  col-lg-3 fw-bold btn1 justify-content-end gap-3 align-items-center py-3 ps-5 pe-4">
+                                        Login
+
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                                fill="#191919" />
+                                        </svg>
+
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="forgot px-4">
+                            <div class="back_l d-flex gap-3 align-items-center text-primary position-absolute"
+                                style="top:10px; cursor: pointer;"><svg width="25" height="13" viewBox="0 0 25 13"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.59421 5.57007L25 5.57008L25 7.42995L4.59422 7.42995L7.9255 10.6917L6.62431 12.0206L1.66465 7.16447L0.986023 6.50001L1.66465 5.83555L6.62431 0.979389L7.9255 2.30831L4.59421 5.57007Z"
+                                        fill="#44BAFD" />
+                                </svg> Back to login</div>
+                            <div class="row gap-4">
+                                <h2 class="fs40 fsm24 fw-bold text-lg-center mb-4"> Forgot password</h2>
+                                <p class="fs16 text-center">
+                                    If you've forgotten your password, don't worry! Simply click on the "forgot
+                                    password" link and enter your email address. We'll send you an email with
+                                    instructions on how to reset your password. Make sure to check your spam or junk
+                                    folder if you don't
+                                    see the email in your inbox.
+                                </p>
+                                <div class="col-lg-12 position-relative bg-white">
+                                    <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="text"
+                                        placeholder="" class="w-100 fs16">
+                                    <label for="" class="text-black position-absolute Placeholder fa16"
+                                        style="background-color: #ffffff !important;">Email*</label>
+                                </div>
+
+                                <div
+                                    class="col-lg-12 position-relative d-flex gap-2 align-items-center justify-content-between">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <input type="checkbox" id="1" class="mychk">
+                                        <label for="1" class="chk"></label>
+                                        <label for="1">I agree with the <a href="" style="color: #44BAFD;"> Terms
+                                                and
+                                                Conditions </a> and <a href="" style="color: #44BAFD;">Privacy
+                                                Policy</a></label>
+                                    </div>
+
+
+                                </div>
+                                <div class="row justify-content-between pe-lg-0 h-100">
+                                    <div class="col-lg-6 col-10">
+                                        <img src="img/Screenshot 2020-03-15 at 15.38 1.png" class="w-100" alt="">
+                                    </div>
+                                    <div class="col-lg-6 d-flex justify-content-end">
+                                        <button
+                                            class="d-flex border-0 py-3 py-lg-2 mt-4 mt-lg-0 btnM fw-bold btn1 justify-content-end gap-3 align-items-center py-2 ps-5 pe-2">
+                                            Reset my password
+
+                                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                                    fill="#191919" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sign_ col-lg-6 row h-100 py-5 px-4" style=" border-left:1px solid #D9D9D9 ;">
+                        <h2 class="fs40 fsm24 fw-bold text-lg-center mb-4"> Register</h2>
+                        <div class="bg-white mb-4 col-lg-6 position-relative mt-4">
+                            <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="text" placeholder=""
+                                class="w-100 fs16">
+                            <label for="" class="text-black position-absolute Placeholder fa16"
+                                style="background-color: #ffffff !important;">First Name *</label>
+                        </div>
+                        <div class="bg-white mb-4 col-lg-6 position-relative mt-4">
+                            <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="text" placeholder=""
+                                class="w-100 fs16">
+                            <label for="" class="text-black position-absolute Placeholder fa16"
+                                style="background-color: #ffffff !important;">last Name *</label>
+                        </div>
+                        <div class="bg-white mb-4 col-lg-12 position-relative">
+                            <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="text" placeholder=""
+                                class="w-100 fs16">
+                            <label for="" class="text-black position-absolute Placeholder fa16"
+                                style="background-color: #ffffff !important;">Email *</label>
+                        </div>
+                        <div class="bg-white mb-4 col-lg-6 position-relative">
+                            <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="password" placeholder=""
+                                class="w-100 fs16">
+                            <label for="" class="text-black position-absolute Placeholder fa16"
+                                style="background-color: #ffffff !important;">Password *</label>
+                        </div>
+                        <div class="bg-white mb-4 col-lg-6 position-relative">
+                            <input required pattern="^[a-zA-Z0-9][a-zA-Z0-9\s]{1,20}$" type="password" placeholder=""
+                                class="w-100 fs16">
+                            <label for="" class="text-black position-absolute Placeholder fa16"
+                                style="background-color: #ffffff !important;">Confirm password
+                                *</label>
+                        </div>
+                        <div
+                            class="mb-4 col-lg-12 position-relative d-flex gap-2 align-items-center justify-content-between">
+                            <div class="d-flex gap-2 align-items-center">
+                                <input type="checkbox" id="2" class="mychk">
+                                <label for="2" class="chk"></label>
+                                <label for="2">I agree with the <a href="" style="color: #44BAFD;"> Terms and
+                                        Conditions </a> and <a href="" style="color: #44BAFD;">Privacy
+                                        Policy</a></label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 h-100">
+                            <img src="img/Screenshot 2020-03-15 at 15.38 1.png" class="w-100" alt="">
+                        </div>
+                        <div class="col-lg-6 d-flex justify-content-end h-100">
+                            <button
+                                class="d-flex fw-bold btnM mt-lg-0 mt-4 payment_btn1 col-lg-6 border-0 justify-content-between gap-3 align-items-center py-3 px-3">
+                                Register
+
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.6038 7.04665L-1.87977e-07 7.04665L-1.33778e-07 8.28656L13.6039 8.28656L11.383 10.4611L12.2505 11.347L15.5569 8.10961L16.0093 7.66663L15.5569 7.22366L12.2505 3.98622L11.383 4.87217L13.6038 7.04665Z"
+                                        fill="white" />
+                                </svg>
+
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginM">
+        Launch demo modal
+    </button> -->
+
+    <div class="pagewrapper">
+        <div class="container-fluid position-sticky px-0 bg-white"
+            style="z-index: 999; top: 0px; border: 1px solid #D9D9D9;">
+            <div class="container  nav_ct" style="border-left: 1px solid #D9D9D9;border-right: 1px solid #D9D9D9;">
+                <div class="row px-0">
+                    <div class="col-3 d-flex align-items-center d-lg-none justify-content-center"
+                        style="border-right: 1px solid #D9D9D9;">
+                        <i class="fa fa-bars fs24 menu_b"></i>
+                    </div>
+                    <div class="col-lg-1 col-5 d-flex justify-content-center align-items-center order-0 order-lg-0">
+                        <a href="">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 navs order-2 order-lg-1">
+                        <ul class="d-flex navbar-nav flex-column flex-lg-row justify-content-center ">
+                            <li class="nav_ct nav_m d-block d-lg-none  nav-item py-3 px-4 d-flex justify-content-lg-center justify-content-between text-center text-uppercase fw-bold fs16"
+                                style="border-left: 1px solid #D9D9D9;border-right: 1px solid #D9D9D9;"><a href=""
+                                    class="align-items-center nav-link">
+                                    Menu
+                                </a>
+                            </li>
+                            <li class="nav_ct nav_m  nav-item py-3 px-3 d-flex justify-content-lg-center justify-content-between text-center text-uppercase fw-bold fs16"
+                                style="border-left: 1px solid #D9D9D9;border-right: 1px solid #D9D9D9 !important;"><a
+                                    href="aboutus.html" class=" align-items-center nav-link">
+                                    About Us
+
+                                </a>
+                                <svg width="17" class="d-lg-none d-block" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.604 7.04693L-1.87969e-07 7.04693L-1.33771e-07 8.28685L13.6037 8.28685L11.383 10.4612L12.2505 11.3472L15.5569 8.10973L16.0093 7.66675L15.5569 7.22378L12.2505 3.98634L11.383 4.87229L13.604 7.04693Z"
+                                        fill="#0E0E0E" />
+                                </svg>
+                            </li>
+                            <li class="nav_ct nav_m nav-item py-3 px-4 d-flex justify-content-lg-center justify-content-between text-center text-uppercase fw-bold fs16"
+                                style="border-right: 1px solid #D9D9D9;"><a href="store.html"
+                                    class=" align-items-center nav-link">
+                                    Store
+                                </a>
+                                <svg width="17" class="d-lg-none d-block" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.604 7.04693L-1.87969e-07 7.04693L-1.33771e-07 8.28685L13.6037 8.28685L11.383 10.4612L12.2505 11.3472L15.5569 8.10973L16.0093 7.66675L15.5569 7.22378L12.2505 3.98634L11.383 4.87229L13.604 7.04693Z"
+                                        fill="#0E0E0E" />
+                                </svg>
+                            </li>
+                            <li class="order-lg-0 order-1 nav_ct nav_m  nav-item py-3 px-4 d-flex justify-content-lg-center justify-content-between text-center text-uppercase fw-bold fs16"
+                                style="border-right: 1px solid #D9D9D9;"><a href="contactus.html"
+                                    class=" align-items-center nav-link">
+                                    Contact Us
+                                </a>
+                                <svg width="17" class="d-lg-none d-block" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.604 7.04693L-1.87969e-07 7.04693L-1.33771e-07 8.28685L13.6037 8.28685L11.383 10.4612L12.2505 11.3472L15.5569 8.10973L16.0093 7.66675L15.5569 7.22378L12.2505 3.98634L11.383 4.87229L13.604 7.04693Z"
+                                        fill="#0E0E0E" />
+                                </svg>
+                            </li>
+                            <li class="order-lg-1 order-0 nav_ct nav_m  nav-item py-3 px-4 d-flex justify-content-lg-center justify-content-between text-center text-uppercase fw-bold fs16"
+                                style="border-right: 1px solid #D9D9D9;"><a href="1on1.html"
+                                    class=" align-items-center nav-link">
+                                    BOOK 1:1
+                                </a>
+                                <svg width="17" class="d-lg-none d-block" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.604 7.04693L-1.87969e-07 7.04693L-1.33771e-07 8.28685L13.6037 8.28685L11.383 10.4612L12.2505 11.3472L15.5569 8.10973L16.0093 7.66675L15.5569 7.22378L12.2505 3.98634L11.383 4.87229L13.604 7.04693Z"
+                                        fill="#0E0E0E" />
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-4 py-3 order-1 order-lg-2 borderl">
+                        <ul class="d-flex flex-row  gap-4 align-items-center justify-content-lg-end navbar-nav gap-2">
+                            <li class="nav-item fs14 dropdown d-none d-lg-block">
+                                <a class="nav-link primary_clr active  dropdown-toggle text-white text-uppercase fw-bold fs16 d-flex align-items-center gap-2"
+                                    href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    GBP £
+                                    <i class="fa fa-chevron-down"></i>
+
+                                </a>
+                                <ul class="dropdown-menu p_back" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">USA</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">USA</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">USA</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">USA</a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link position-relative primary_clr fs14 text-uppercase text-white position-relative"
+                                    href="#">
+
+
+                                    <svg class="" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.62764 17.7349L1.6123 8.86743H17.735L15.7196 17.7349H3.62764Z"
+                                            fill="white" />
+                                        <path d="M3.62764 17.7349L1.6123 8.86743H17.735L15.7196 17.7349H3.62764Z"
+                                            stroke="#191919" stroke-width="1.2092" />
+                                        <path d="M4.03064 8.86754L7.25517 2.41846" stroke="#191919"
+                                            stroke-width="1.2092" />
+                                        <path d="M15.3166 8.86754L12.092 2.41846" stroke="#191919"
+                                            stroke-width="1.2092" />
+                                    </svg>
+
+                                    <span class="position-absolute d-flex justify-content-center align-items-center"
+                                        style="
+                                   
+                                   top: 10px;
+                                    right: -3px;
+                                    background-color: #44BAFD;
+                                    
+                                    font-size: 10px;
+                                    width: 12px; height: 12px; border-radius: 50%;
+
+">10</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  fs1 text-uppercase text-white" type="button" class="btn btn-primary"
+                                    data-bs-toggle="modal" data-bs-target="#loginM" href="#"><svg width="25" height="24"
+                                        viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_26_408)">
+                                            <path
+                                                d="M7.91669 11.9167V7.33333C7.91669 4.80203 9.96872 2.75 12.5 2.75C15.0313 2.75 17.0834 4.80203 17.0834 7.33333V11.9167H7.91669Z"
+                                                fill="white" />
+                                            <path
+                                                d="M12.5 14.6666C9.34824 14.6666 6.38221 15.4619 3.79169 16.8629V20.1666H21.2084V16.8629C18.6179 15.4619 15.6518 14.6666 12.5 14.6666Z"
+                                                fill="white" />
+                                            <path
+                                                d="M7.91669 11.9167V7.33333C7.91669 4.80203 9.96872 2.75 12.5 2.75C15.0313 2.75 17.0834 4.80203 17.0834 7.33333V11.9167H7.91669Z"
+                                                stroke="#191919" stroke-width="1.375" />
+                                            <path
+                                                d="M12.5 14.6666C9.34824 14.6666 6.38221 15.4619 3.79169 16.8629V20.1666H21.2084V16.8629C18.6179 15.4619 15.6518 14.6666 12.5 14.6666Z"
+                                                stroke="#191919" stroke-width="1.375" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_26_408">
+                                                <rect width="19" height="19" fill="white" transform="translate(3 2)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container px-0">
+                <div class="row bg-white ">
+                    <nav aria-label="breadcrumb ">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item "><a href="#" class="text-decoration-none">Home</a></li>
+                            <li class="breadcrumb-item text-black"><a href="#" class="text-decoration-none">My Cart</a>
+                            </li>
+
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class=" px-0 border" style="background-image: url('img/cart_bg.png');">
+                <div class="container bl py-lg-5 pt-5 px-lg-5">
+
+                    <h1 class="fs40 fw-bold  mb-3">
+                        My Cart
+                        </h2>
+                        <p class="fs16 col-lg-6 ">
+                            Lorem ipsum dolor sit amet consectetur. Lobortis sit sed imperdiet tristique. Sem quis sed
+                            venenatis purus. Molestie tempor massa aliquet purus. Ac integer in quisque quam ultrices.
+                        </p>
+
+                </div>
+
+            </div>
+            <div class="container border " style="border-top: 0px !important; ">
+
+                <div class="row  px-4 px-lg-0">
+                    <div class="col-lg-8 px-lg-0 px-0 ">
+                        <div class="px-4 px-lg-0">
+                            <div class="px-lg-5 mt-4 ">
+                                <h2 class="fs32 fsm24 fw-bold mb-4 ">
+                                    My Products
+                                </h2>
+
+                            </div>
+
+                            <div class="border border-top-0 px-0"> </div>
+
+
+
+
+                        </div>
+                        <div class="border border-top-0 px-0"> </div>
+                        <div class=" my-4 px-lg-5 ">
+                            <div class="row mt-2 border bg-white mb-3">
+                                <div class="col-lg-5">
+                                    <img src="img/Image.png" class="w-100" alt="">
+                                </div>
+                                <div class="col-lg-7 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="fs14 text-uppercase fsm12 mt-4 mt-lg-0">video</h5>
+                                        <h3 class="fs24 fsm16 col-lg-12 col-8">The Complete Web Developer Course 2.0
+                                        </h3>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="fs24">QTY: 1</div>
+                                        <div class="fs24">£350.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-2 border bg-white mb-3">
+                                <div class="col-lg-5">
+                                    <img src="img/Image.png" class="w-100" alt="">
+                                </div>
+                                <div class="col-lg-7 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="fs14 text-uppercase fsm12 mt-4 mt-lg-0">video</h5>
+                                        <h3 class="fs24 fsm16 col-lg-12 col-8">The Complete Web Developer Course 2.0
+                                        </h3>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="fs24">QTY: 1</div>
+                                        <div class="fs24">£350.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-2 border bg-white mb-3">
+                                <div class="col-lg-5">
+                                    <img src="img/Image.png" class="w-100" alt="">
+                                </div>
+                                <div class="col-lg-7 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="fs14 text-uppercase fsm12 mt-4 mt-lg-0">video</h5>
+                                        <h3 class="fs24 fsm16 col-lg-12 col-8">The Complete Web Developer Course 2.0
+                                        </h3>
+
+                                    </div>
+
+                                    <div class="d-flex justify-content-between">
+                                        <div class="fs24">QTY: 1</div>
+                                        <div class="fs24">£350.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="col-lg-4 px-lg-0 px-0 bill bl">
+                        <div class="px-lg-0 px-3">
+                            <div class="px-lg-5 mt-4 ">
+                                <h2 class="fs32 fsm24 fw-bold mb-4 ">
+                                    Order Summary
+                                </h2>
+
+                            </div>
+
+                            <div class="border  border-top-0 px-0 d-none d-lg-block"> </div>
+
+
+
+
+                        </div>
+                        <div class="border border-top-0 px-0 d-none d-lg-block"> </div>
+                        <div class="my-4 px-lg-5 px-3">
+
+                            <div class="row mt-2 mb-3">
+                                <div class="col-lg-6 col-9">
+                                    <h3 class="fs24 fsm16 fw-bold text-start">Subtotal</h3>
+                                </div>
+                                <div class="col-lg-6 col-2">
+                                    <h3 class="fs24 fsm16 fw-bold text-end">£350.00</h3>
+                                </div>
+                                <div class="border border-top-0 px-0"> </div>
+
+
+                            </div>
+                            <div class="row mt-2 mb-3">
+                                <div class="col-lg-12">
+                                    <h3 class="fs24 fsm16 fw-bold text-start">Savings <span class="fs16 text-success">
+                                            50%off</span></h3>
+                                </div>
+                                <div class="col-lg-8 col-9">
+                                    <p class="fs16 fsm12 fw-bold text-start text-success">Promo code: DEVVDRAGON50</h3>
+                                </div>
+                                <div class="col-lg-4 col-2">
+                                    <h3 class="fs24 fsm16 fw-bold text-end text-success">-£125.00</h3>
+                                </div>
+                                <div class="border border-top-0 px-0"> </div>
+
+
+                            </div>
+                            <div class="row mt-2 mb-3">
+                                <div class="col-6">
+                                    <h2 class="fs32 fsm24 fw-bold text-start">Total</h2>
+                                </div>
+                                <div class="col-6">
+                                    <h2 class="fs32 fsm24 fw-bold text-end">£125.00</h2>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                        </div>
+                        <button
+                            class="btn d-lg-block btnM py-lg-0 py-4 btn-border col-lg-12 rounded-0 fs16 px-4 d-flex justify-content-between payment_btn mb-lg-3">
+                            <span class="text-start">Place Order</span>
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                    fill="#191919" />
+                            </svg>
+                        </button>
+                        <div class="accordion border-0" id="accordionExample">
+
+
+                            <div class="accordion-item bg-transparent py-lg-0 py-2">
+                                <h2 class="accordion-header " id="headingThree">
+                                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+
+                                        <div class="col-lg-10">
+                                            <div class="col-lg-12 fs16">
+
+                                                Have a promo code?
+
+                                            </div>
+
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="row mt-2 border">
+
+                                            <div class="col-lg-7 d-flex flex-column justify-content-between">
+                                                <div>
+                                                    <h5 class="fs14 text-uppercase fsm12 mt-4 mt-lg-0">video</h5>
+                                                    <h3 class="fs24 fsm16 col-lg-12 col-8">The Complete Web Developer
+                                                        Course 2.0
+                                                    </h3>
+
+                                                </div>
+
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="fs24">QTY: 1</div>
+                                                    <div class="fs24">£350.00</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+            <div class="w-100 border"
+                style="background:url('img/Related\ Products.png'); background-position: center; ">
+
+                <div class="container border">
+                    <h2 class="fs40 ms-lg-4 ">Related products</h2>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class=" border bg-white px-0 sCard" style="width: 360px;">
+                                <div class="col-lg-12">
+                                    <img src="img/Image.png" class="w-100" alt="">
+                                </div>
+                                <div class="col-lg-12 d-flex flex-column justify-content-between mt-2 ps-3">
+                                    <div>
+                                        <h5 class="fs16 text-uppercase fsm12 mt-4 mt-lg-0">video</h5>
+                                        <h3 class="fs24 fsm16 col-lg-8 col-8">The Complete Web Developer Course 2.0</h3>
+
+                                    </div>
+
+                                    <div class="d-flex mt-3 justify-content-between align-items-center">
+                                        <div class="fs24">£350.00</div>
+                                        <div class="fs24">
+                                            <button
+                                                class="btn d-lg-block bg-dark  py-3 btn-border rounded-0 fs16 px-4 d-flex justify-content-between payment_btn">
+                                                <span class="text-start">Add to cart</span>
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                                        fill="#191919" />
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class=" border bg-white px-0 sCard" style="width: 360px;">
+                                <div class="col-lg-12">
+                                    <img src="img/Image.png" class="w-100" alt="">
+                                </div>
+                                <div class="col-lg-12 d-flex flex-column justify-content-between mt-2 ps-3">
+                                    <div>
+                                        <h5 class="fs16 text-uppercase fsm12 mt-4 mt-lg-0">video</h5>
+                                        <h3 class="fs24 fsm16 col-lg-8 col-8">The Complete Web Developer Course 2.0</h3>
+
+                                    </div>
+
+                                    <div class="d-flex mt-3 justify-content-between align-items-center">
+                                        <div class="fs24">£350.00</div>
+                                        <div class="fs24">
+                                            <button
+                                                class="btn d-lg-block bg-dark  py-3 btn-border rounded-0 fs16 px-4 d-flex justify-content-between payment_btn">
+                                                <span class="text-start">Add to cart</span>
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                                        fill="#191919" />
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class=" border bg-white px-0 sCard" style="width: 360px;">
+                                <div class="col-lg-12">
+                                    <img src="img/Image.png" class="w-100" alt="">
+                                </div>
+                                <div class="col-lg-12 d-flex flex-column justify-content-between mt-2 ps-3">
+                                    <div>
+                                        <h5 class="fs16 text-uppercase fsm12 mt-4 mt-lg-0">video</h5>
+                                        <h3 class="fs24 fsm16 col-lg-8 col-8">The Complete Web Developer Course 2.0</h3>
+
+                                    </div>
+
+                                    <div class="d-flex mt-3 justify-content-between align-items-center">
+                                        <div class="fs24">£350.00</div>
+                                        <div class="fs24">
+                                            <button
+                                                class="btn d-lg-block bg-dark  py-3 btn-border rounded-0 fs16 px-4 d-flex justify-content-between payment_btn">
+                                                <span class="text-start">Add to cart</span>
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                                        fill="#191919" />
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class=" border bg-white px-0 sCard" style="width: 360px;">
+                                <div class="col-lg-12">
+                                    <img src="img/Image.png" class="w-100" alt="">
+                                </div>
+                                <div class="col-lg-12 d-flex flex-column justify-content-between mt-2 ps-3">
+                                    <div>
+                                        <h5 class="fs16 text-uppercase fsm12 mt-4 mt-lg-0">video</h5>
+                                        <h3 class="fs24 fsm16 col-lg-8 col-8">The Complete Web Developer Course 2.0</h3>
+
+                                    </div>
+
+                                    <div class="d-flex mt-3 justify-content-between align-items-center">
+                                        <div class="fs24">£350.00</div>
+                                        <div class="fs24">
+                                            <button
+                                                class="btn d-lg-block bg-dark  py-3 btn-border rounded-0 fs16 px-4 d-flex justify-content-between payment_btn">
+                                                <span class="text-start">Add to cart</span>
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                                        fill="#191919" />
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class=" border bg-white px-0 sCard" style="width: 360px;">
+                                <div class="col-lg-12">
+                                    <img src="img/Image.png" class="w-100" alt="">
+                                </div>
+                                <div class="col-lg-12 d-flex flex-column justify-content-between mt-2 ps-3">
+                                    <div>
+                                        <h5 class="fs16 text-uppercase fsm12 mt-4 mt-lg-0">video</h5>
+                                        <h3 class="fs24 fsm16 col-lg-8 col-8">The Complete Web Developer Course 2.0</h3>
+
+                                    </div>
+
+                                    <div class="d-flex mt-3 justify-content-between align-items-center">
+                                        <div class="fs24">£350.00</div>
+                                        <div class="fs24">
+                                            <button
+                                                class="btn d-lg-block bg-dark  py-3 btn-border rounded-0 fs16 px-4 d-flex justify-content-between payment_btn">
+                                                <span class="text-start">Add to cart</span>
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                                        fill="#191919" />
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class=" border bg-white px-0 sCard" style="width: 360px;">
+                                <div class="col-lg-12">
+                                    <img src="img/Image.png" class="w-100" alt="">
+                                </div>
+                                <div class="col-lg-12 d-flex flex-column justify-content-between mt-2 ps-3">
+                                    <div>
+                                        <h5 class="fs16 text-uppercase fsm12 mt-4 mt-lg-0">video</h5>
+                                        <h3 class="fs24 fsm16 col-lg-8 col-8">The Complete Web Developer Course 2.0</h3>
+
+                                    </div>
+
+                                    <div class="d-flex mt-3 justify-content-between align-items-center">
+                                        <div class="fs24">£350.00</div>
+                                        <div class="fs24">
+                                            <button
+                                                class="btn d-lg-block bg-dark  py-3 btn-border rounded-0 fs16 px-4 d-flex justify-content-between payment_btn">
+                                                <span class="text-start">Add to cart</span>
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                                        fill="#191919" />
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class=" border bg-white px-0 sCard" style="width: 360px;">
+                                <div class="col-lg-12">
+                                    <img src="img/Image.png" class="w-100" alt="">
+                                </div>
+                                <div class="col-lg-12 d-flex flex-column justify-content-between mt-2 ps-3">
+                                    <div>
+                                        <h5 class="fs16 text-uppercase fsm12 mt-4 mt-lg-0">video</h5>
+                                        <h3 class="fs24 fsm16 col-lg-8 col-8">The Complete Web Developer Course 2.0</h3>
+
+                                    </div>
+
+                                    <div class="d-flex mt-3 justify-content-between align-items-center">
+                                        <div class="fs24">£350.00</div>
+                                        <div class="fs24">
+                                            <button
+                                                class="btn d-lg-block bg-dark  py-3 btn-border rounded-0 fs16 px-4 d-flex justify-content-between payment_btn">
+                                                <span class="text-start">Add to cart</span>
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                                        fill="#191919" />
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class=" border bg-white px-0 sCard" style="width: 360px;">
+                                <div class="col-lg-12">
+                                    <img src="img/Image.png" class="w-100" alt="">
+                                </div>
+                                <div class="col-lg-12 d-flex flex-column justify-content-between mt-2 ps-3">
+                                    <div>
+                                        <h5 class="fs16 text-uppercase fsm12 mt-4 mt-lg-0">video</h5>
+                                        <h3 class="fs24 fsm16 col-lg-8 col-8">The Complete Web Developer Course 2.0</h3>
+
+                                    </div>
+
+                                    <div class="d-flex mt-3 justify-content-between align-items-center">
+                                        <div class="fs24">£350.00</div>
+                                        <div class="fs24">
+                                            <button
+                                                class="btn d-lg-block bg-dark  py-3 btn-border rounded-0 fs16 px-4 d-flex justify-content-between payment_btn">
+                                                <span class="text-start">Add to cart</span>
+                                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                                        fill="#191919" />
+                                                </svg>
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <button
+                            class="payment_btn1 border-0 px-4 d-lg-none pt-4 text-white pb-2 d-flex justify-content-between align-items-center">
+                            View All Products
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                    fill="#191919" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="w-100  border d-none d-lg-block "
+                style="background:url('img/payment_bg.png'); background-position: center; ">
+
+                <div class="container py-5 border border-bottom-0 border-top-0 px-0 ps-5 position-relative">
+                    <h1 class="fs40 text-capitalize mb-3 col-lg-5">
+                        Book Your Personalized 1:1 Session Now: Let's Make Your Web Dreams a Reality!
+                    </h1>
+                    <p class="fs16 col-lg-5 mb-3">Lorem ipsum dolor sit amet consectetur. Lobortis sit sed imperdiet
+                        tristique. Sem quis sed venenatis purus. Molestie tempor massa aliquet purus. Ac integer in
+                        quisque quam ultrices.</p>
+
+
+                </div>
+            </div>
+
+            <div class="w-100 d-block d-lg-none px-4 my-5 ">
+                <h2 class="fs24 fw-bold pe-5">
+                    Schedule a Personalized 1:1 Session with Our Experts Today
+                </h2>
+                <div class="w-100 d-flex  flex-column justify-content-end" style="height:284px; background-image: url(img/cart_last_m.png); background-size: cover; 
+                
+                ">
+                    <div>
+                        <h3 class="mb-5 text-white px-4">
+                            Lorem ipsum dolor sit amet consectetur. Lobortis sit sed imperdiet tristique. Sem quis sed
+                            venenatis purus.
+                        </h3>
+                        <button
+                            class=" d-flex border-0 px-3 justify-content-between align-items-center payment_btn pt-4 pb-2 w-100">
+                            Book A 1:1 Session
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M13.6038 7.04671L-1.87977e-07 7.04671L-1.33778e-07 8.28662L13.6039 8.28662L11.383 10.4612L12.2505 11.3471L15.5569 8.10967L16.0093 7.66669L15.5569 7.22372L12.2505 3.98628L11.383 4.87223L13.6038 7.04671Z"
+                                    fill="#191919" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="bg-dark text-white position-relative">
+                <div class="container" style=" border:1px solid #3C3C3C;">
+                    <div class="row mb-lg-0 ">
+                        <div class="col-lg-4 d-flex ps-4 ps-lg-0 d-lg-flex justify-content-lg-center justify-content-between py-lg-5 py-4 text-center"
+                            style=" border-right:1px solid #3C3C3C ;">
+                            <div class="d-none d-lg-block">
+                                <img src="img/flogo.png" class="d-none d-lg-block mb-4" alt="">
+
+                                <img src="img/Frame 21.png" class="d-none d-lg-block" alt="">
+                            </div>
+                            <img src="img/logofM.svg" class="d-block d-lg-none" alt="" class=" mb-lg-4">
+                            <div class="dropdown d-block d-lg-none">
+                                <a class="dropdown-toggle gap-2 d-flex align-items-center" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    GBP £
+                                    <i class="fa fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu text-black mD" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item text-black" href="#"> GBP £</a></li>
+                                    <li><a class="dropdown-item text-black" href="#"> GBP £</a></li>
+                                    <li><a class="dropdown-item text-black" href="#"> GBP £</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="w-100 d-block d-lg-none" style="border-bottom: 2px solid #3c3c3c;"></div>
+
+                        <div class="col-lg-2 col-6 d-flex flex-column py-lg-5 py-4 ps-lg-5 ps-4"
+                            style=" border-right:1px solid #3C3C3C ;">
+                            <h3 class="fs24 fsm16 mb-4">Useful Links</h3>
+
+                            <a href="aboutus.html" class="fs16 mb-3">About Us</a>
+                            <a href="store.html" class="fs16 mb-3">Store</a>
+                            <a href="1on1.html" class="fs16 mb-3">Book 1:1</a>
+                            <a href="contactus.html" class="fs16 mb-3">Contact Us</a>
+                        </div>
+                        <div class="col-lg-2 col-6 d-flex flex-column py-lg-5 py-4 ps-lg-5 ps-4"
+                            style=" border-right:1px solid #3C3C3C ;">
+                            <h3 class="fs24 fsm16 mb-4">Company</h3>
+
+                            <a href="terms.html" class="fs16 mb-3">Terms & Conditions</a>
+                            <a href="" class="fs16 mb-3">Cookie Policy</a>
+                        </div>
+                        <div class="w-100 d-block d-lg-none" style="border-bottom: 2px solid #3c3c3c;"></div>
+
+
+                        <div class="col-lg-4 d-flex flex-column py-lg-5 py-4 ps-lg-5 ps-4 mb-lg-0">
+                            <h3 class="fs24 fsm16 mb-4">Contact us</h3>
+
+                            <a href="" class="fs16 mb-3">Email: support@devvdragons.com</a>
+                            <a href="" class="fs16 mb-3">Phone: +44 (0)20 123 4567</a>
+                            <p class="fs16 text-white">Address: 123 Street, London,<br> United Kingdom, 123 ABC</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="position-absolute d-none d-lg-block w-100 " style="border-top:1px solid #3C3C3C;
+                bottom: 75px;
+            ">
+                </div>
+                <div class="container" style=" border:1px solid #3C3C3C;">
+                    <div class="row mb-lg-0 ">
+                        <div class="col-lg-4 pt-lg-3 d-block ps-4 ps-lg-0 d-lg-flex justify-content-lg-center justify-content-between text-center"
+                            style=" border-right:1px solid #3C3C3C ;">
+                            <img src="img/Frame 21.png" class="pt-3 d-block d-lg-none mx-auto" alt="">
+                            <p class="d-block  fsm12  mt-3 text-lg-start text-center text-muted">
+                                © 2021 devvdragons All rights reserved.
+                            </p>
+                        </div>
+                        <div class="col-lg-2 col-6 d-flex flex-column d-none d-lg-block"
+                            style=" border-right:1px solid #3C3C3C ;">
+
+                        </div>
+                        <div class="col-lg-2 col-6 d-flex flex-column d-none d-lg-block"
+                            style=" border-right:1px solid #3C3C3C ;">
+
+                        </div>
+                        <div class="w-100 d-none d-lg-block d-none d-lg-block"
+                            style="border-bottom: 2px solid #3c3c3c;">
+                        </div>
+
+
+                        <div class="col-lg-4 d-flex flex-column 0 d-none d-lg-block">
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="position-absolute  d-flex d-lg-block flex-column justify-content-center align-items-center w-100"
+                style="bottom: 15px; border-top:1px solid #3C3C3C ;">
+                <div class="container">
+                    <img src="img/Frame 21.png" class="pt-3 d-block d-lg-none" alt="">
+                    <p class="d-block  fsm12 ms-5 ps-5  mt-2 text-lg-start text-center text-muted">
+                        © 2021 devvdragons All rights reserved.
+                    </p>
+                </div>
+            </div> -->
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/menu.js"></script>
+
+
+</body>
+
+</html>
